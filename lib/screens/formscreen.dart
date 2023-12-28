@@ -206,7 +206,7 @@ class _FormScreenState extends State<FormScreen> {
               ),
               ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFF161A30)
+                    backgroundColor: buttoncolor
                   ),
                   onPressed: (){
                 //calling the function here to add task

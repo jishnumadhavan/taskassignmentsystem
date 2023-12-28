@@ -92,7 +92,7 @@ class _ShowTaskScreenState extends State<ShowTaskScreen> {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFF161A30)
+                    backgroundColor: buttoncolor
                 ),
                 onPressed: (){
                   Navigator.push(
@@ -111,8 +111,6 @@ class _ShowTaskScreenState extends State<ShowTaskScreen> {
                   itemBuilder: (context, index) {
                     //formated dateTime here to display wisely
                     String taskcreateddate = DateFormat('dd MMM yyyy hh:mm a').format(context.read<TaskCreation>().tasks[index]['createdat']);
-                    //sorted the list here so the last task will be show up at first
-                    context.read<TaskCreation>().tasks.sort((a, b) => DateTime.parse(b["createdat"].toString()).compareTo(DateTime.parse(a["createdat"].toString())));
 
                     return Container(
                       padding: EdgeInsets.all(15),
