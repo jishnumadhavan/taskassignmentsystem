@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class TaskCreation extends Cubit<List<Map<String, dynamic>>> {
   TaskCreation() : super([]);
-  
+
   List tasks=[];
   int id=1;
   int pendingtasks=0;

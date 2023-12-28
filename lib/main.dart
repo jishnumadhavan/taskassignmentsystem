@@ -25,13 +25,7 @@ class TaskCreationApp extends StatelessWidget {
     ),
       ],
         child: ShowTaskScreen(),
-        // child: HomePage(),
       )
-
-      // BlocProvider(
-      //   create: (_) => CounterCubit(),
-      //   child: HomePage(),
-      // ),
     );
   }
 }
